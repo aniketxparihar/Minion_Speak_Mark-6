@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Banana Speak</title>
+    <style>
+        .normie-txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #normie{
+            width:70%;
+            height:20vh;
+            display:block;
+            padding: 1rem;
+            margin:3rem;
+        }
+        .banana-txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #banana{
+            border:1px solid black;
+            height:20vh;
+            width:70%;
+            padding:1rem;
+            margin:3rem;
+        }
+        
+        #normie-to-banana{
+            border:1px solid yellow;
+            padding:1rem 2rem;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px yellow;
+            cursor: pointer;
+            transition: transform 1s;
+        }
+        #normie-to-banana:hover{
+            transform: translate3d(20px 2px 0px) scale(0.9);
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1 class="head">Banana Banana</h1>
+    <div class="normie-txt">
+    <textarea  id="normie" cols="30" rows="10"></textarea>
+    <button id="normie-to-banana">Translate</button>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div class="banana-txt">
+          <b>Banana Here</b>
+        <div id="banana">
+        </div>
+    </div>
+   <script src="app.js"></script>
+</body>
+</html>
