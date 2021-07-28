@@ -19,7 +19,7 @@
             display:block;
             padding: 1rem;
             margin:3rem;
-            border:1px solid rgb(218, 221, 21);
+            border:1px solid rgb(184, 187, 20);
 
             border-radius: 10px;
         }
@@ -30,26 +30,33 @@
             flex-direction: column;
         }
         #banana{
-            border:1px solid rgb(218, 221, 21);
+            border:1px solid rgb(184, 187, 20);
             height:20vh;
             width:70%;
             padding:1rem;
             margin:3rem;
-            box-shadow: 1px 1px 10px yellow;
+            box-shadow: 1px 1px 10px rgb(184, 187, 20);
             border-radius: 10px;
         }
         
         #normie-to-banana{
-            border:1px solid rgb(218, 221, 21);
+            border:1px solid rgb(184, 187, 20);
             padding:1rem 2rem;
             background-color: #fff;
-            box-shadow: 1px 1px 10px rgb(184, 187, 20);
+            
             border-radius: 10px;
             cursor: pointer;
-            transition: transform 1s;
+            transition: transform 1.5s;
+            font-size: 1.5rem;
+            background-color: rgb(184, 187, 20);color: rgb(255, 255, 255);
         }
         #normie-to-banana:hover{
-            transform: scale(0.9);
+            transform: rotateY(360deg);
+            background-color: #fff;
+            color: rgb(184, 187, 20);
+            border:2px solid rgb(184, 187, 20);
+            box-shadow: 1px 1px 10px rgb(184, 187, 20);
+            
             
         }
         .head{
@@ -73,6 +80,9 @@
         }
         span{
             color: white;
+        }
+        h3{
+            text-decoration: underline;
         }
 
     </style>
