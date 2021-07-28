@@ -43,7 +43,7 @@
             border:1px solid rgb(218, 221, 21);
             padding:1rem 2rem;
             background-color: #fff;
-            box-shadow: 1px 1px 10px rgb(218, 221, 21);
+            box-shadow: 1px 1px 10px rgb(184, 187, 20);
             border-radius: 10px;
             cursor: pointer;
             transition: transform 1s;
@@ -53,17 +53,26 @@
             
         }
         .head{
-            background-color:yellow;
+            background-color:rgb(184, 187, 20);
             display: flex;
             justify-content: center;
             align-items: center;
-            height:4rem;
+            height:10rem;
             width:100%;
             font-size: small;
+            flex-direction: column;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .main{
+            font-size: 2rem;
         }
         *{
             margin:0;
             padding:0;
+        }
+        span{
+            color: white;
         }
 
     </style>
@@ -71,10 +80,10 @@
 </head>
 <body>
     <div class="head">
-    <h1 >Banana Speak</h1>
+    <h1 ><span>Banana Speak</span></h1>
     </div>
     <div class="normie-txt">
-    <textarea  id="normie" cols="30" rows="10"></textarea>
+    <textarea  id="normie" placeholder="Write your message here" cols="30" rows="10"></textarea>
     <button id="normie-to-banana">Translate</button>
     </div>
     <br>
@@ -84,10 +93,19 @@
     <br>
     <div class="banana-txt">
 
-         <h1> <b>Banana Here</b></h1>
+         <h3> <b>Banana Language will be shown Here!</b></h3>
         <div id="banana">
         </div>
     </div>
+    <div class="head">
+    <h1 class="main"><span>About</span></h1>
+    <p>
+    Are you a fan of <span>minions</span>? Did you know that the gibberish they say
+    is an actual language. Use the translator to convert your text from 
+    English to Minion speak or Banana language.
+    </p>
+    </div>
+    
    <script src="app.js"></script>
 </body>
 </html>
